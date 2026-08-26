@@ -19,15 +19,6 @@
   </p>
 </div>
 
-> [!NOTE]
-> **OpenCore Legacy Patcher 3.0.0 – Now Supports macOS Tahoe 26!**
-> 
-> The long awaited version 3.0.0 of OpenCore Legacy Patcher is here, bringing **initial support for macOS Tahoe 26** to the community!
-> 
-> 🚨 **Please Note:**  
-> - Only OpenCore-Patcher 3.0.0 **from the [lzhoang2801/OpenCore-Legacy-Patcher](https://github.com/lzhoang2801/OpenCore-Legacy-Patcher/releases/tag/3.0.0)** repository provides support for macOS Tahoe 26 with early patches.
-> - Official Dortania releases or older patches **will NOT work** with macOS Tahoe 26.  
-
 > [!WARNING]
 > While OpCore Simplify significantly reduces setup time, the Hackintosh journey still requires:
 > - Understanding basic concepts from the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/)
