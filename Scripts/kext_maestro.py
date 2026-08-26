@@ -319,8 +319,6 @@ class KextMaestro:
                 selected_kexts.append("AtherosE2200Ethernet")
             elif device_id in pci_data.IntelMausiIDs:
                 selected_kexts.append("IntelMausiEthernet")
-            elif device_id in pci_data.RealtekRTL8125IDs:
-                selected_kexts.append("LucyRTL8125Ethernet")
             elif device_id in pci_data.RealtekRTL8100IDs:
                 selected_kexts.append("RealtekRTL8100")
             elif device_id in pci_data.RealtekRTL8111IDs:
@@ -331,6 +329,8 @@ class KextMaestro:
                 selected_kexts.append("CatalinaBCM5701Ethernet")
             elif device_id in pci_data.IntelX500IDs:
                 selected_kexts.append("IntelLucy")
+            elif device_id in pci_data.RealtekRTL812xIDs:
+                selected_kexts.append("RTL812xLucy")
 
         if all(network_props.get("Bus Type") == "USB" for network_props in hardware_report.get("Network", {}).values()):
             selected_kexts.append("NullEthernet")

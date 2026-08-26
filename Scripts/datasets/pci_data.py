@@ -831,7 +831,16 @@ RealtekRTL8125IDs = [
     "1186-8125"
 ]
 
-EthernetIDs = AppleIGBIDs + AquantiaAqtionIDs + AtherosE2200IDs + BroadcomBCM57XXIDs + IntelI22XIDs + IntelMausiIDs + IntelX500IDs + RealtekRTL8100IDs + RealtekRTL8111IDs + RealtekRTL8125IDs
+RealtekRTL812xIDs = [
+    # RTL812xLucy.kext
+    "10EC-3000",
+    "10EC-5000",
+    "10EC-8125",
+    "10EC-8126",
+    "1186-8125"
+]
+
+EthernetIDs = AppleIGBIDs + AquantiaAqtionIDs + AtherosE2200IDs + BroadcomBCM57XXIDs + IntelI22XIDs + IntelMausiIDs + IntelX500IDs + RealtekRTL8100IDs + RealtekRTL8111IDs + RealtekRTL8125IDs + RealtekRTL812xIDs
 
 WirelessUSBIDs = [
     # RtWlanU.kext, RtWlanU1827.kext and RT2870USBWirelessDriver.kext 

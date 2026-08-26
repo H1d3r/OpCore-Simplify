@@ -431,6 +431,7 @@ kexts = [
         name = "LucyRTL8125Ethernet", 
         description = "Provides support for Realtek RTL8125 family", 
         category = "Ethernet",
+        conflict_group_id = "RTL8125",
         github_repo = {
             "owner": "Mieze",
             "repo": "LucyRTL8125Ethernet"
@@ -473,6 +474,16 @@ kexts = [
         download_info = {
             "id": 130015132, 
             "url": "https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/2.4.2/RealtekRTL8111-V2.4.2.zip"
+        }
+    ),
+    KextInfo(
+        name = "RTL812xLucy", 
+        description = "A new macOS driver for the Realtek RTL812x family", 
+        category = "Ethernet",
+        conflict_group_id = "RTL8125",
+        github_repo = {
+            "owner": "Mieze",
+            "repo": "RTL812xLucy"
         }
     ),
     KextInfo(
