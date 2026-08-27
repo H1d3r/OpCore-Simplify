@@ -177,7 +177,8 @@ class KextMaestro:
                 selected_kexts.append("AppleALC")
         
         if "AMD" in hardware_report.get("CPU").get("Manufacturer") and self.utils.parse_darwin_version(macos_version) >= self.utils.parse_darwin_version("21.4.0") or \
-            int(hardware_report.get("CPU").get("CPU Count")) > 1 and self.utils.parse_darwin_version(macos_version) >= self.utils.parse_darwin_version("19.0.0"):
+            int(hardware_report.get("CPU").get("CPU Count")) > 1 and self.utils.parse_darwin_version(macos_version) >= self.utils.parse_darwin_version("19.0.0") or \
+            hardware_report.get("CPU").get("Codename") in cpu_data.IntelCPUGenerations[:4]:
             selected_kexts.append("AppleMCEReporterDisabler")
 
         if self.utils.parse_darwin_version(macos_version) >= self.utils.parse_darwin_version("22.0.0") and not "AVX2" in hardware_report.get("CPU").get("SIMD Features"):
